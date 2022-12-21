@@ -220,10 +220,21 @@ class ViewController: UIViewController {
     }
 
     @objc private func tapOnButton() {
-        let currentVC = KeyboardViewController()
-        currentVC.modalPresentationStyle = .fullScreen
-
-        present(currentVC, animated: true)
+//        let currentVC = KeyboardViewController()
+//        currentVC.modalPresentationStyle = .fullScreen
+//
+//        present(currentVC, animated: true)
+        
+        let currentVC = SideMenuMainViewController()
+        presentFullScreen(currentVC, animated: true)
     }
 
+}
+
+
+extension UIViewController {
+    func presentFullScreen(_ viewController: UIViewController, animated: Bool) {
+        viewController.modalPresentationStyle = .fullScreen
+        present(viewController, animated: animated)
+    }
 }

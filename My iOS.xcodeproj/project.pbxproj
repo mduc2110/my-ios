@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		780C08BA4CBFFA138CDF92B0 /* Pods_My_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503DB0EB1BE45729546B1EF9 /* Pods_My_iOS.framework */; };
 		B911DBFC290FAB0F005E59D5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B911DBFB290FAB0F005E59D5 /* Coordinator.swift */; };
+		B9695BA029211EBE0098F2F5 /* SideMenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9695B9F29211EBE0098F2F5 /* SideMenuMainViewController.swift */; };
+		B9695BA229211F2B0098F2F5 /* SideMenuHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9695BA129211F2B0098F2F5 /* SideMenuHomeViewController.swift */; };
+		B9695BA429211F3E0098F2F5 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9695BA329211F3E0098F2F5 /* SideMenuViewController.swift */; };
 		B99529B429025BE600B25567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99529B329025BE600B25567 /* AppDelegate.swift */; };
 		B99529B629025BE600B25567 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99529B529025BE600B25567 /* SceneDelegate.swift */; };
 		B99529B829025BE600B25567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99529B729025BE600B25567 /* ViewController.swift */; };
@@ -25,6 +28,9 @@
 		503DB0EB1BE45729546B1EF9 /* Pods_My_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886976CF80BE23F6AB7958B3 /* Pods-My iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My iOS.debug.xcconfig"; path = "Target Support Files/Pods-My iOS/Pods-My iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B911DBFB290FAB0F005E59D5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B9695B9F29211EBE0098F2F5 /* SideMenuMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuMainViewController.swift; sourceTree = "<group>"; };
+		B9695BA129211F2B0098F2F5 /* SideMenuHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHomeViewController.swift; sourceTree = "<group>"; };
+		B9695BA329211F3E0098F2F5 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		B99529B029025BE600B25567 /* My iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99529B329025BE600B25567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B99529B529025BE600B25567 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B90B2E6B29530A0E003BD120 /* PanGesture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PanGesture;
+			sourceTree = "<group>";
+		};
 		B911DBFA290FAAFE005E59D5 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,8 +83,19 @@
 		B9695B9C29211E2A0098F2F5 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				B9695B9E29211E8C0098F2F5 /* SideMenu */,
 			);
 			path = Practice;
+			sourceTree = "<group>";
+		};
+		B9695B9E29211E8C0098F2F5 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B9695B9F29211EBE0098F2F5 /* SideMenuMainViewController.swift */,
+				B9695BA129211F2B0098F2F5 /* SideMenuHomeViewController.swift */,
+				B9695BA329211F3E0098F2F5 /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		B99529A729025BE500B25567 = {
@@ -121,6 +145,7 @@
 		B9EB0E8E291AB6290018A1E6 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				B90B2E6B29530A0E003BD120 /* PanGesture */,
 				B9EB0E8F291AB6340018A1E6 /* Keyboard */,
 				B9EB0E8B291AB1810018A1E6 /* TestVC */,
 			);
@@ -259,11 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B99529B829025BE600B25567 /* ViewController.swift in Sources */,
+				B9695BA229211F2B0098F2F5 /* SideMenuHomeViewController.swift in Sources */,
 				B99529B429025BE600B25567 /* AppDelegate.swift in Sources */,
+				B9695BA029211EBE0098F2F5 /* SideMenuMainViewController.swift in Sources */,
 				B911DBFC290FAB0F005E59D5 /* Coordinator.swift in Sources */,
 				B99529B629025BE600B25567 /* SceneDelegate.swift in Sources */,
 				B9EB0E91291AB65E0018A1E6 /* KeyboardViewController.swift in Sources */,
 				B9EB0E8D291AB1950018A1E6 /* TestViewController.swift in Sources */,
+				B9695BA429211F3E0098F2F5 /* SideMenuViewController.swift in Sources */,
 				B99529BE29025BE600B25567 /* My_iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -394,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
